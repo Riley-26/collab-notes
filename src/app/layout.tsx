@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { inter } from '@/app/ui/fonts';
 import "./ui/globals.css";
 import Navbar from "./ui/Navbar";
+import { montserrat } from "./ui/fonts";
 
 export const metadata: Metadata = {
   title: "D-Tails",
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${montserrat.className} antialiased tracking-wider`}>
         <Navbar/>
         {children}
       </body>

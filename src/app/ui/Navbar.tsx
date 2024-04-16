@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Navbar(){
     return (
-        <nav className="py-6 flex justify-between max-w-[1200px] mx-auto">
+        <nav className="py-6 flex justify-between max-w-[1400px] mx-auto">
             <div className="max-w-[400px]">
                 <Image
                     src="/vercel.svg"
