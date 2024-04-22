@@ -6,6 +6,8 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 25, 25, 25;
   --background-end-rgb: 30, 30, 30;
+  scroll-behavior: smooth;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,7 +34,7 @@ body {
 }
 
 .h1Bg{
-  @apply text-2xl p-4 bgGradCard z-[20]
+  @apply text-2xl p-4 z-[20]
 }
 
 .card{
@@ -44,9 +46,13 @@ body {
 }
 
 .animCard{
-  @apply bg-neutral-700 rounded-xl p-[0.2rem] m-1
+  @apply bg-neutral-700 rounded-xl p-[0.15rem] m-1
 }
 
 .hrShadow{
   @apply border border-neutral-700 shadow-[0_10px_20px_10px_rgba(0,0,0,0.3)] z-[10]
+}
+
+.button{
+  @apply w-[200px] h-[80px] flex justify-center items-center text-xl font-semibold rounded-lg bg-gradient-to-r from-neutral-700 to-neutral-800 border border-neutral-600 transition-all hover:border-[#93c5fd60] hover:text-[#93c5fd80]
 }

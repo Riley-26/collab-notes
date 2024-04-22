@@ -3,7 +3,7 @@
 export default function Page(){
     return (
         <div className="flex w-full h-full">
-            <div className="flex flex-col h-full w-1/3 m-1">
+            <div className="flex flex-col w-1/3 mr-2">
                 <div className="h-1/3 w-full animCard">
                     <div className="card">
                         <div className="innerCard">
@@ -21,7 +21,7 @@ export default function Page(){
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col h-full w-1/3 m-1">
+            <div className="flex flex-col w-1/3 mr-2">
                 <div className="h-2/3 w-full animCard">
                     <div className="card">
                         <h1 className="h1Bg">MY SHARED NOTES</h1>
@@ -41,7 +41,7 @@ export default function Page(){
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col h-full w-1/3 m-1">
+            <div className="flex flex-col w-1/3">
                 <div className="h-2/3 w-full animCard">
                     <div className="card">
                         <h1 className="h1Bg">JOINED NOTES</h1>

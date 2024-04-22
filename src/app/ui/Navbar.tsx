@@ -22,8 +22,8 @@ export default function Navbar(){
     }, [])
 
     return (
-        <>
-            <nav className="py-6 flex justify-between max-w-[1400px] mx-auto">
+        <div className="fixed min-w-full z-100 backdrop-blur-md">
+            <nav className="py-6 px-12 flex justify-between max-w-[1400px] mx-auto">
                 <div className="max-w-[400px]">
                     <Image
                         src="/vercel.svg"
@@ -35,8 +35,7 @@ export default function Navbar(){
                         onClick={() => {window.location.href = "/"}}
                     />
                 </div>
-                <ul id="navTabs" className="flex justify-between min-w-[40%] text-lg">
-                    <li><a className="hover:text-blue-300 transition-all" href="/">HOME</a></li>
+                <ul id="navTabs" className="flex justify-between xl:min-w-[35%] min-w-[50%] text-lg">
                     <li><a className="hover:text-blue-300 transition-all" href="/about">ABOUT</a></li>
                     <li><a className="hover:text-blue-300 transition-all" href="/notes">NOTES</a></li>
                     <li><a className="hover:text-blue-300 transition-all" href="/social">SOCIAL</a></li>
@@ -44,7 +43,6 @@ export default function Navbar(){
                 </ul>
             </nav>
             <hr className="hrShadow" />
-    
-        </>
+        </div>
     )
 }
