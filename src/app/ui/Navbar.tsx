@@ -4,22 +4,11 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import clsx from "clsx";
 
-export default function Navbar(){
+export default function Navbar({loggedIn}: {loggedIn:boolean}){
 
     const currentTab:string = usePathname();
-    const [loggedIn, setLoggedIn] = useState(true);
-
-    useEffect(() => {
-        const navTabs:any = document.getElementById("navTabs")
-        for (let i=0; i<navTabs.children.length; i++){
-            if (currentTab.split("/")[1] === navTabs.children[i].innerText.toLowerCase()){
-                console.log(navTabs.children[i])
-                navTabs.children[i].classList.add("text-blue-300")
-                break
-            }
-        }
-    }, [])
 
     return (
         <div className="fixed min-w-full z-100 backdrop-blur-md">
@@ -36,10 +25,11 @@ export default function Navbar(){
                     />
                 </div>
                 <ul id="navTabs" className="flex justify-between xl:min-w-[35%] min-w-[50%] text-lg">
-                    <li><a className="hover:text-blue-300 transition-all" href="/about">ABOUT</a></li>
-                    <li><a className="hover:text-blue-300 transition-all" href="/notes">NOTES</a></li>
-                    <li><a className="hover:text-blue-300 transition-all" href="/social">SOCIAL</a></li>
-                    <li><a className="hover:text-blue-300 transition-all" href={ loggedIn ? "/user" : "/login" }>{ loggedIn ? "USER" : "LOG IN" }</a></li>
+                    <li><Link className={clsx("hover:text-blue-300 transition-all", {"text-blue-300": currentTab === "/about"})} href="/about">ABOUT</Link></li>
+                    <span className="w-[2px] h-full bg-neutral-700 bg-opacity-60"/>
+                    <li><Link className={clsx("hover:text-blue-300 transition-all", {"text-blue-300": currentTab === "/notes"})} href="/notes">NOTES</Link></li>
+                    <li><Link className={clsx("hover:text-blue-300 transition-all", {"text-blue-300": currentTab === "/social"})} href="/social">SOCIAL</Link></li>
+                    <li><Link className={clsx("hover:text-blue-300 transition-all", {"text-blue-300": currentTab === ("/user" || "/login")})} href={ loggedIn ? "/user" : "/login" }>{ loggedIn ? "USER" : "LOG IN" }</Link></li>
                 </ul>
             </nav>
             <hr className="hrShadow" />

@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link";
 import BackImg from "./ui/BackImg";
 
 export default function Home() {
@@ -62,24 +63,24 @@ export default function Home() {
             <div className="flex flex-col justify-center items-center text-center min-h-[1000px] bg-gradient-to-b from-transparent from-0% to-neutral-900 to-20%">
                 <h1 className="text-8xl my-16">GET STARTED NOW</h1>
                 <div className="flex flex-col justify-center items-center">
-                    <a className="rounded-[50%] border-2 border-neutral-500 w-[150px] h-[150px] flex items-center justify-center text-[96px] transition-all hover:scale-105" href="/notes">
+                    <Link className="rounded-[50%] border-2 border-neutral-500 w-[150px] h-[150px] flex items-center justify-center text-[96px] transition-all hover:scale-105" href="/notes">
                         +
-                    </a>
+                    </Link>
                     <h2 className="text-2xl my-8">CREATE NEW NOTE</h2>
                 </div>
                 <div className="grid grid-flow-row grid-cols-4 gap-8 my-12">
-                    <a className="button" href="/about">
+                    <Link className="button" href="/about">
                         ABOUT
-                    </a>
-                    <a className="button" href="/notes">
+                    </Link>
+                    <Link className="button" href="/notes">
                         NOTES
-                    </a>
-                    <a className="button" href="/social">
+                    </Link>
+                    <Link className="button" href="/social">
                         SOCIAL
-                    </a>
-                    <a className="button" href={ true ? "/user" : "/login" }>
+                    </Link>
+                    <Link className="button" href={ true ? "/user" : "/login" }>
                         ACCOUNT
-                    </a>
+                    </Link>
                 </div>
             </div>
         </main>

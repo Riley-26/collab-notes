@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      boxShadow: {
+        "cardGlow": "0 0 200px 0px rgb(147,197,253, 0.2)"
+      }
     },
   },
   plugins: [],
