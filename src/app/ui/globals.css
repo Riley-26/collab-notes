@@ -29,6 +29,14 @@ body {
   }
 }
 
+.h1Main{
+  @apply text-8xl my-8
+}
+
+.h2Main{
+  @apply text-5xl my-8
+}
+
 .bgGradCard{
   @apply bg-gradient-to-r from-[#3f3f4650] to-[#3f3f4630] rounded-t-lg
 }

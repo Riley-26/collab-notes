@@ -11,7 +11,7 @@ export default function Page(){
             <div className="flex flex-col justify-center items-center text-center min-h-[1000px] bg-gradient-to-t from-transparent from-0% to-neutral-900 to-20%">
                 <BackImg/>
                 <h6 className="text-lg">ABOUT</h6>
-                <h1 className="text-8xl my-8">CREATING A NOTE</h1>
+                <h1 className="h1Main">CREATING A NOTE</h1>
                 <p className="text-xl my-8" style={{textShadow: "0px 0px 8px rgb(0,0,0)"}}>
                     Press the button below to begin creating your note. You may also navigate to the same area by choosing "NOTES", then clicking this same button in the grid.
                 </p>
@@ -28,7 +28,7 @@ export default function Page(){
             <div className="flex flex-col justify-center items-center text-center min-h-[1000px] bg-gradient-to-b from-transparent from-0% to-neutral-900 to-20%">
                 <BackImg/>
                 <h6 className="text-lg">ABOUT</h6>
-                <h1 className="text-8xl my-8">SOLO NOTE</h1>
+                <h1 className="h1Main">SOLO NOTE</h1>
                 <p className="text-xl my-8" style={{textShadow: "0px 0px 8px rgb(0,0,0)"}}>
                     You may want to create a note for just your own eyes. Upon creating a new note, choose the "SOLO" option when prompted. You may change this whenever, and add friends to the note later on if you wish.
                 </p>
@@ -39,7 +39,7 @@ export default function Page(){
             <div className="flex flex-col justify-center items-center text-center min-h-[1000px] bg-gradient-to-b from-transparent from-0% to-neutral-900 to-20%">
                 <BackImg/>
                 <h6 className="text-lg">ABOUT</h6>
-                <h1 className="text-8xl my-8">COLLABORATIVE NOTE</h1>
+                <h1 className="h1Main">COLLABORATIVE NOTE</h1>
                 <p className="text-xl my-8" style={{textShadow: "0px 0px 8px rgb(0,0,0)"}}>
                     Designed for collaborative note-taking, this platform allows for real-time note taking with others. Simply choose "COLLABORATIVE" when creating the note, and add your friends to the note. You will see who has joined 
                     and is currently typing. You can also customise their permissions to prevent deletion and tampering. When another person has finished their edits, the new note will await confirmation from you, the author, before saving the note.
@@ -54,7 +54,7 @@ export default function Page(){
             <div className="flex flex-col justify-center items-center text-center min-h-[1000px] bg-gradient-to-b from-transparent from-0% to-neutral-900 to-20%">
                 <BackImg/>
                 <h6 className="text-lg">ABOUT</h6>
-                <h1 className="text-8xl my-8">PERMISSIONS</h1>
+                <h1 className="h1Main">PERMISSIONS</h1>
                 <p className="text-xl my-8" style={{textShadow: "0px 0px 8px rgb(0,0,0)"}}>
                     Navigate to "SOCIAL" to view your friends and the notes that you are part of. To join a friends note, they must add you to it on their end. You will be made aware of your permissions, which will be one of:
                 </p>

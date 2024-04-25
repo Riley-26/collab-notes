@@ -8,8 +8,8 @@ export default function Home() {
         <main className="flex flex-col items-center justify-between max-w-[1200px] mx-auto">
             <div className="flex flex-col justify-center items-center text-center min-h-[1000px]">
                 <BackImg/>
-                <h1 className="text-8xl my-8">DYNAMIC NOTE-TAKING</h1>
-                <h2 className="text-5xl my-8">WITH D-TAILS</h2>
+                <h1 className="h1Main">DYNAMIC NOTE-TAKING</h1>
+                <h2 className="h2Main">WITH D-TAILS</h2>
                 <p className="text-xl my-8" style={{textShadow: "0px 0px 8px rgb(0,0,0)"}}>
                     The new way to collaborate with others, live, and share insights. The modern way to stay interconnected. Simply follow the instructions below to get started.
                 </p>
@@ -21,7 +21,7 @@ export default function Home() {
                 </svg>
             </div>
             <div id="start" className="flex flex-col justify-center items-center text-center min-h-[1000px] bg-gradient-to-b from-transparent from-0% to-neutral-900 to-20%">
-                <h1 className="text-8xl my-8">HOW IT WORKS</h1>
+                <h1 className="h1Main">HOW IT WORKS</h1>
                 <div className="grid grid-flow-row grid-cols-2 gap-12 my-8 text-lg">
                     <div className="flex flex-col items-center">
                         <span className="rounded-[50%] border-2 border-neutral-500 w-[60px] h-[60px] flex items-center justify-center text-3xl">1</span>
@@ -50,7 +50,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center text-center min-h-[1000px] bg-gradient-to-b from-transparent from-0% to-neutral-900 to-20%">
-                <h1 className="text-8xl my-8">WHY USE THIS?</h1>
+                <h1 className="h1Main">WHY USE THIS?</h1>
                 <p className="text-lg my-8">
                     Collaboration is the key to efficient team environments. This platform will unlock the ability to work together on demand, no matter the location. Share notes with your friends and co-workers without hassle, and 
                     see each other's actions live. No more sending notes through email, or sending blurry images to each other. Stay connected and share knowledge with each other in a simple, accessible format. Simply join a note together 

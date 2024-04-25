@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.className} antialiased tracking-wider`}>
-        <Navbar loggedIn={true}/>
+        <Navbar loggedIn={false}/>
         {children}
       </body>
     </html>
