@@ -1,6 +1,16 @@
 "use client"
 
+
 export default function Page(){
+
+    const logout = async () => {
+        if (window.confirm("Are you sure that you would like to log out?")){
+            await fetch("/api/userLogin/logout").then(() => {
+                window.location.href = "/"
+            })
+        }
+    }
+
     return (
         <div className="flex flex-col w-full h-full">
             <div className="flex w-full h-2/3">
@@ -29,7 +39,7 @@ export default function Page(){
                 </div>
                 <div className="w-1/3 card justify-center items-center text-center">
                     <h1 className="text-2xl hover:text-blue-300 transition-all my-4 cursor-pointer py-2 px-4 rounded-lg max-w-[350px]">CHANGE USERNAME/PASSWORD</h1>
-                    <h1 className="text-2xl hover:text-red-400 transition-all my-4 cursor-pointer py-2 px-4 rounded-lg">LOG OUT</h1>
+                    <h1 className="text-2xl hover:text-red-400 transition-all my-4 cursor-pointer py-2 px-4 rounded-lg" onClick={() => logout()}>LOG OUT</h1>
                 </div>
             </div>
         </div>

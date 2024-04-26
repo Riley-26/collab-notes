@@ -4,6 +4,7 @@ import Link from "next/link";
 import BackImg from "./ui/BackImg";
 
 export default function Home() {
+
     return (
         <main className="flex flex-col items-center justify-between max-w-[1200px] mx-auto">
             <div className="flex flex-col justify-center items-center text-center min-h-[1000px]">

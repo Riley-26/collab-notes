@@ -26,7 +26,13 @@ export default function Page(){
     const requestLogin = async () => {
         try{
             const handleLogin = await fetch(`/api/userLogin/get-userLogin-table?username=${loginData.username}&password=${loginData.password}`).then((data) => {
-                console.log(data)
+                if (data.status === 500){
+                    alert("Invalid password")
+                    throw Error
+                } else if (data.status === 200){
+                    alert("Signed in")
+                    window.location.href = "/"
+                }
             })
         } catch (error) {
             console.log(error)
