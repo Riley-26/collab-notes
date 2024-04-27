@@ -30,7 +30,12 @@ export default function Page(){
     const requestSignup = async () => {
         try{
             const handleSignup = await fetch(`/api/userLogin/update-userLogin-table?username=${signupData.username}&email=${signupData.email}&password=${signupData.password}`).then((data) => {
-                console.log(data)
+                if (data.status === 500){
+                    alert("Failed to sign up. Please try again.")
+                } else if (data.status === 200){
+                    alert("Successfully signed up, you may now log in.")
+                    window.location.href = "/login"
+                }
             })
         } catch (error){
             console.log(error)
