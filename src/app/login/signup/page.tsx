@@ -29,7 +29,7 @@ export default function Page(){
 
     const requestSignup = async () => {
         try{
-            const handleSignup = await fetch(`/api/userLogin/update-userLogin-table?username=${signupData.username}&email=${signupData.email}&password=${signupData.password}`).then((data) => {
+            const handleSignup = await fetch(`/api/userLogin/add-userLogin-table?username=${signupData.username}&email=${signupData.email}&password=${signupData.password}`).then((data) => {
                 if (data.status === 500){
                     alert("Failed to sign up. Please try again.")
                 } else if (data.status === 200){

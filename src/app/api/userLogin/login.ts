@@ -1,3 +1,5 @@
+"use server"
+
 import { serialize } from "cookie"
 import type { NextApiRequest, NextApiResponse } from "next"
 
