@@ -17,7 +17,7 @@ export default function Home() {
                 <a className="button" href="#start">
                     START NOW
                 </a>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12 animate-[bounce_1.5s_ease-in-out_infinite] my-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12 animate-[bounce_1.5s_ease-in-out_infinite] animation-fill-initial my-4 z-[-1]">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
             </div>

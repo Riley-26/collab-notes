@@ -1,7 +1,13 @@
+import Sidebar from "../ui/Sidebar"
+
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <>
-            <main className="max-w-[1400px] h-[calc(94vh)] mx-auto flex justify-center items-center pt-[8rem]">
+            <Sidebar
+                currentTab={"social"}
+                sideLinks={["/friends", "/collaborative_notes"]}
+            />
+            <main className="h-[calc(100vh)] flex pt-[5rem] ml-[400px]">
                 {children}
             </main>
         </>

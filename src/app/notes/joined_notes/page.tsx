@@ -1,11 +1,9 @@
 "use client"
 
-import Sidebar from "../ui/Sidebar"
-
 export default function Page(){
     return (
         <div className="p-12">
-            <h1 className="text-3xl">Notes</h1>
+            <h1 className="text-3xl">Joined notes</h1>
         </div>
     )
 }
