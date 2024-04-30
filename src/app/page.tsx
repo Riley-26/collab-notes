@@ -27,13 +27,13 @@ export default function Home() {
                     <div className="flex flex-col items-center">
                         <span className="rounded-[50%] border-2 border-neutral-500 w-[60px] h-[60px] flex items-center justify-center text-3xl">1</span>
                         <p className="my-4">
-                            Create an account or log in by navigating to "LOGIN" to have your work saved and to add friends to your notes.
+                            Create an account or log in by navigating to "LOG IN" in order to have your work saved and to add friends to your notes.
                         </p>
                     </div>
                     <div className="flex flex-col items-center">
                         <span className="rounded-[50%] border-2 border-neutral-500 w-[60px] h-[60px] flex items-center justify-center text-3xl">2</span>
                         <p className="my-4">
-                            If planning on making the note collaborative, then add friends within the "SOCIAL" tab. Follow the steps after clicking the "ADD FRIEND" button. Add friends to the note after the next step when prompted.
+                            If you are planning on making the note collaborative, then add friends within the "SOCIAL" tab. Follow the steps after clicking the "ADD FRIEND" button. Add friends to the note after the next step when prompted.
                         </p>
                     </div>
                     <div className="flex flex-col items-center">

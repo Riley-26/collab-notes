@@ -5,7 +5,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <>
             <Sidebar
                 currentTab={"user"}
-                sideLinks={[]}
+                sideLinks={["/stats", "/latest", "/settings"]}
             />
             <main className="h-[calc(100vh)] flex pt-[5rem] ml-[400px]">
                 {children}
