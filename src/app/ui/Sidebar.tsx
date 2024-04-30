@@ -37,7 +37,7 @@ export default function Sidebar({currentTab, sideLinks}: SidebarProps){
                     }
                 </ul>
                 <div className="flex flex-col justify-center items-center border-2 border-neutral-600 py-4 rounded-xl">
-                    <a className="rounded-[50%] border-2 border-neutral-500 w-[100px] h-[100px] flex items-center justify-center text-[88px] transition-all hover:scale-105 my-4" href="/notes/note">
+                    <a className="rounded-[50%] border-2 border-neutral-500 w-[100px] h-[100px] flex items-center justify-center text-[88px] transition-all hover:scale-105 my-4" href="/create_note">
                         +
                     </a>
                     <h2 className="text-xl my-4 px-4">CREATE NEW NOTE</h2>
