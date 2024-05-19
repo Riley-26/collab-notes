@@ -46,7 +46,7 @@ body {
 }
 
 .card{
-  @apply bg-gradient-to-r from-[#2c2c2f] to-[#242426] rounded-lg flex flex-col m-1 border-2 border-neutral-700 border-opacity-40 transition-all z-[10] hover:shadow-cardGlow hover:z-[1]
+  @apply bg-gradient-to-r from-[#2c2c2f] to-[#242426] rounded-lg flex flex-col m-1 p-4 transition-all z-[10]
 }
 
 .innerCard{
