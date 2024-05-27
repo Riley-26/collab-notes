@@ -8,6 +8,7 @@ export default function Page(){
         friends: [],
         name: ""
     })
+    const [savedData, setSavedData]:any = useState(false)
 
     const isCollab = (res:boolean) => {
         let newValue = {}
@@ -30,6 +31,7 @@ export default function Page(){
             ...noteData,
             ...newValue
         }))
+        setSavedData(true)
     }
 
     const createNote = () => {
@@ -103,6 +105,15 @@ export default function Page(){
                 <h6 className="text-lg">NOTES - CREATE NEW NOTE</h6>
                 <h1 className="text-5xl my-4">Create note now</h1>
                 <h2 className="text-3xl my-4 text-white text-opacity-40">Or you can go back and edit the preferences if needed</h2>
+                <div className="text-xl text-white">
+                    {
+                        savedData && Object.values(noteData).map((key:any, item:any) => {
+                            return (
+                                <h1 key={key}>{noteData[item]}</h1>
+                            )
+                        })
+                    }
+                </div>
                 <button className="rounded-[50%] cursor-pointer border-2 border-neutral-500 w-[160px] h-[160px] flex items-center justify-center text-[120px] transition-all hover:scale-105 my-4" onClick={() => createNote()}>
                     +
                 </button>
