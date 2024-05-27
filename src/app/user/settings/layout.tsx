@@ -2,7 +2,7 @@
 
 export default function Layout({children}: {children:React.ReactNode}){
     return (
-        <main className="min-w-full min-h-full">
+        <main className="flex w-full">
             {children}
         </main>
     )

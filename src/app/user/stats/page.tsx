@@ -7,18 +7,18 @@ export default function Page(){
             <div className="flex flex-col justify-between w-[100%] h-[100%] py-8">
                 <div className="grid grid-flow-row grid-cols-1 px-2 gap-4 min-w-[65%] min-h-[49%]">
                     <div className="card h-full">
-                        <h2>Stats</h2>
+                        <h2>Recent activity</h2>
                     </div>
                 </div>
                 <div className="grid grid-flow-row grid-cols-3 px-2 gap-4 min-w-[35%] min-h-[49%]">
                     <div className="card h-full">
-                        <h2>Settings</h2>
+                        <h2>Edits in past month</h2>
                     </div>
                     <div className="card h-full">
-                        <h2>Settings</h2>
+                        <h2>New friends</h2>
                     </div>
                     <div className="card h-full">
-                        <h2>Settings</h2>
+                        <h2>Daily streak</h2>
                     </div>
                 </div>
             </div>
