@@ -38,10 +38,6 @@ export default function Page(){
 
     }
 
-    useEffect(() => {
-        console.log(noteData)
-    }, [noteData])
-
     return (
         <main className="flex flex-col max-w-[1200px] mx-auto">
             <div className="flex flex-col items-center justify-center max-w-[1200px] mx-auto min-h-[900px]">
@@ -105,12 +101,26 @@ export default function Page(){
                 <h6 className="text-lg">NOTES - CREATE NEW NOTE</h6>
                 <h1 className="text-5xl my-4">Create note now</h1>
                 <h2 className="text-3xl my-4 text-white text-opacity-40">Or you can go back and edit the preferences if needed</h2>
-                <div className="text-xl text-white">
+                <div className="text-xl text-white flex justify-around min-w-[100%]">
                     {
-                        savedData && Object.values(noteData).map((key:any, item:any) => {
-                            return (
-                                <h1 key={key}>{noteData[item]}</h1>
-                            )
+                        savedData && Object.keys(noteData).map((key:any, index:any) => {
+                            if (index === 0){
+                                if (noteData[key]){
+                                    return (
+                                        <div className="">
+                                            <h1 key={key}>Collaborative</h1>
+                                        </div>
+                                    )
+                                } else{
+                                    return (
+                                        <h1 key={key}>Solo</h1>
+                                    )
+                                }
+                            } else{
+                                return (
+                                    <h1 key={key}>{noteData[key]}</h1>
+                                )
+                            }
                         })
                     }
                 </div>
